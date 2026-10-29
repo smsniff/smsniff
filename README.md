@@ -11,3 +11,9 @@ No unencrypted resource, database, runtime log, secret, or customized server con
 ## Required SQLite vehicle-filter hotfix (2026-10-30)
 
 Apply `FivePD-SQLite-Hotfix-20261030.zip` after the original candidate. It contains one replacement server DLL, instructions and source diff. The vehicle-type filter previously supplied an unnamed scalar to a named SQL parameter; the resulting SQLite error could stop FivePD. Existing DB, permissions, configuration and localization are not modified. 34 automated tests passed; actual Windows FiveM validation remains pending. The password is the same one shared privately for the original archive.
+
+## Optional standalone weapon wheel (2026-10-30)
+
+`FivePD-WeaponWheel-v1.zip` contains the separate `fivepd_weaponwheel` resource, Korean installation instructions, original vector icons, a subtle original mechanical equip sound, full source and verification results. Install the resource folder and add `ensure fivepd_weaponwheel` after FivePD in `server.cfg`. This package does not replace existing FivePD files or the SQLite hotfix. Use 7-Zip and the same privately shared archive password.
+
+Hold Tab, point at a weapon, use the scroll wheel to cycle weapons within the slot, and release Tab to equip. Escape cancels. The sound plays only when changing to a different owned weapon. The design follows the supplied screenshots; the original icons/assets were unavailable, so this is not a pixel-identical reproduction. 22 Lua behavior checks, 6 JavaScript checks and browser interactions at four resolutions passed. Actual Windows FiveM behavior and the final in-game audio mix still require validation.
