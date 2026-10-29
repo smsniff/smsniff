@@ -1,5 +1,17 @@
 # FivePD Korean resource delivery
 
+## Current basic operations UI update (2026-10-30)
+
+Download **[FivePD-Operations-UI-Latest.zip](https://github.com/smsniff/smsniff/raw/refs/heads/fivepd-korean-delivery/FivePD-Operations-UI-Latest.zip)**. This is a small, **unencrypted update for the existing Korean FivePD installation**, containing only replacement client/server DLLs, changed compiled NUI files, one runtime alert sound and a short Korean installation guide. Merge its `fivepd` directory into the existing resource while the server is stopped, restart and reconnect. It is separate from the standalone weapon-wheel update below.
+
+B opens the operations desk with a duty shortcut and vehicle/equipment links. F4/F10/F11 use mouse-friendly menus with shared navigation. FivePD administrators can select and save department logos in department settings; logos persist in `fivepd/Data/department-branding.json` and appear for department members. F6 opens the duty-only officer radio chat and alert waypoint action. Server-authoritative backup/panic packets reach every authorized on-duty connected officer, including officers without an assigned patrol unit and other departments. Alerts show the requesting officer's position; panic adds a restrained emergency tone. Dispatch system messages type progressively; chat is rendered as plain text. Existing incident backup/F1 assignment is preserved.
+
+The original SQLite vehicle-filter fix remains in the replacement server DLL. No DB, permissions, custom configuration, weapon-wheel files, source recordings or test tools are included or overwritten. Keep the generated branding JSON when updating. This patch needs the original resource's unchanged dependencies and assets.
+
+Validation: 47 server tests, 159 NUI tests (2 existing skipped), 14 server transport/native simulation checks, 13 client native-boundary simulation checks, and Chromium interaction flows at 1366×768, 1920×1080, 2560×1440 and 3440×1440 passed. Replacement assemblies retain the original assembly versions and dependency references. Windows FiveM multiplayer behavior and the final in-game audio mix have not been directly verified.
+
+## Earlier downloads
+
 `FivePD-Korean-Download.zip` is an AES-256 encrypted ZIP for the repository owner. Use 7-Zip to extract it. The password is delivered separately in the private conversation and is not stored in this repository.
 
 The archive contains a development candidate, not a guarantee of game compatibility. Back up existing resources and databases and test on a separate Windows FiveM server first. Native HUD and some native English text remain unverified or unfinished.
