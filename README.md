@@ -1,6 +1,16 @@
 # FivePD Korean resource delivery
 
-## Current cumulative update v2.1.0 — complete wheel, readable UI, URL images and admin teleport
+## Current hotfix v2.1.1 — field initialization and teleport
+
+[Download FivePD-FieldOps-Fix-v2.1.1.zip](https://github.com/smsniff/smsniff/raw/refs/heads/fivepd-korean-delivery/FivePD-FieldOps-Fix-v2.1.1.zip) — ordinary ZIP, no password, 0.44 MB. For an existing v2.1.0 installation, stop the server and merge its `[fivepd]` folder into `D:\txData\FiveMBasicServerCFXDefault_E351AA.base\resources`. Restart and reconnect. `fivepd_update_status` reports 2.1.1. Keep bracketed names and all Config/Data/DB files. No configuration reset or server.cfg change is required.
+
+Json.NET appended configured stations to the constructor's default station list. The valid shipped one-station configuration therefore became duplicate mission-row stations and failed validation, blocking the entire field service including teleport. The configured station list now replaces the fallback list; omitted lists still receive the default and genuinely empty/duplicate lists remain invalid. Only the server DLL and two deployment identification files changed. User settings and recovery data are preserved.
+
+Validation: reproduced three failing configuration regression cases before the fix; all26 configuration/recovery tests,130 actual server-adapter checks with the shipped configuration, and56 existing SDK server tests now pass. Actual CitizenFX SDK build succeeded. The cumulative v2.1.1 archive differs from v2.1.0 in exactly these three runtime files and installation text. ZIP CRC, encryption absence and config/data exclusion were checked. Live Windows FiveM behavior remains to be checked after installation.
+
+[FivePD-Operations-UI-Latest.zip](https://github.com/smsniff/smsniff/raw/refs/heads/fivepd-korean-delivery/FivePD-Operations-UI-Latest.zip) and `FivePD-Operations-Update-v2.1.1.zip` include the same fix for cumulative installation.
+
+## Previous cumulative update v2.1.0 — complete wheel, readable UI, URL images and admin teleport
 
 **[Download FivePD-Operations-UI-Latest.zip](https://github.com/smsniff/smsniff/raw/refs/heads/fivepd-korean-delivery/FivePD-Operations-UI-Latest.zip)** — ordinary ZIP, no password, approximately9.9MB. Versioned filename: `FivePD-Operations-Update-v2.1.0.zip`. Runtime files and a short Korean installation/use guide only.
 

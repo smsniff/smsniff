@@ -5,4 +5,6 @@ ddad683034f4448cf7b11a8cad8ffe389413b85583125d7f44c481c2cc062f2b  FivePD-Operati
 3bbb7bce96f46752c8c50afca5a11892b3cf3a721f6b7f9effdf409e2f5c9986  FivePD-Core-Path-Fix-v2.0.1.zip
 3b4fa63fea349c80bd014cae2b4eebacbc845183aa704706b058fdcca1046476  FivePD-Operations-Update-v2.0.1.zip
 eaf68e8f7ce1c05fdcf45333ac5768bebaf6701af7f7eac8d4e7580b47872e26  FivePD-Operations-Update-v2.1.0.zip
-eaf68e8f7ce1c05fdcf45333ac5768bebaf6701af7f7eac8d4e7580b47872e26  FivePD-Operations-UI-Latest.zip
+9b0ad7775c90686e8c2ae3fb821bc08de8bdee54d55298bc05d157c6d08086cb  FivePD-FieldOps-Fix-v2.1.1.zip
+d43e96729ba3b59f1cba586cd083e2c96cdb26031ab63cef3a2d02daf22c74f2  FivePD-Operations-UI-Latest.zip
+d43e96729ba3b59f1cba586cd083e2c96cdb26031ab63cef3a2d02daf22c74f2  FivePD-Operations-Update-v2.1.1.zip
