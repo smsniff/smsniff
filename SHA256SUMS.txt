@@ -1,4 +1,5 @@
 bbcd0f28c55b0e23695527bfe7c7f28b9a7ca52f82a2e1bbd1ba074c86d7f37d  FivePD-Korean-Download.zip
 4cca47e997fcee2e57d84a83e0a140b9dc382c5ed893512cbd79bcb2bc01ad1e  FivePD-SQLite-Hotfix-20261030.zip
 33139064d38161fbb22b6e21f6f1d180ea84b59f92de3d94fa5fef902ebf3982  FivePD-Operations-UI-v1.0.0.zip
-33139064d38161fbb22b6e21f6f1d180ea84b59f92de3d94fa5fef902ebf3982  FivePD-Operations-UI-Latest.zip
+ddad683034f4448cf7b11a8cad8ffe389413b85583125d7f44c481c2cc062f2b  FivePD-Operations-Update-v2.0.0.zip
+ddad683034f4448cf7b11a8cad8ffe389413b85583125d7f44c481c2cc062f2b  FivePD-Operations-UI-Latest.zip
