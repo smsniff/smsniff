@@ -4,4 +4,5 @@ bbcd0f28c55b0e23695527bfe7c7f28b9a7ca52f82a2e1bbd1ba074c86d7f37d  FivePD-Korean-
 ddad683034f4448cf7b11a8cad8ffe389413b85583125d7f44c481c2cc062f2b  FivePD-Operations-Update-v2.0.0.zip
 3bbb7bce96f46752c8c50afca5a11892b3cf3a721f6b7f9effdf409e2f5c9986  FivePD-Core-Path-Fix-v2.0.1.zip
 3b4fa63fea349c80bd014cae2b4eebacbc845183aa704706b058fdcca1046476  FivePD-Operations-Update-v2.0.1.zip
-3b4fa63fea349c80bd014cae2b4eebacbc845183aa704706b058fdcca1046476  FivePD-Operations-UI-Latest.zip
+eaf68e8f7ce1c05fdcf45333ac5768bebaf6701af7f7eac8d4e7580b47872e26  FivePD-Operations-Update-v2.1.0.zip
+eaf68e8f7ce1c05fdcf45333ac5768bebaf6701af7f7eac8d4e7580b47872e26  FivePD-Operations-UI-Latest.zip

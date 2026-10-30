@@ -1,6 +1,24 @@
 # FivePD Korean resource delivery
 
-## Current folder-layout correction v2.0.1
+## Current cumulative update v2.1.0 — complete wheel, readable UI, URL images and admin teleport
+
+**[Download FivePD-Operations-UI-Latest.zip](https://github.com/smsniff/smsniff/raw/refs/heads/fivepd-korean-delivery/FivePD-Operations-UI-Latest.zip)** — ordinary ZIP, no password, approximately9.9MB. Versioned filename: `FivePD-Operations-Update-v2.1.0.zip`. Runtime files and a short Korean installation/use guide only.
+
+Stop the server, back up outside `resources`, then merge the archive's `[fivepd]` and `fivepd_fieldops` folders into `D:\txData\FiveMBasicServerCFXDefault_E351AA.base\resources`. Keep the bracketed group. The actual resources are:
+
+- `resources/[fivepd]/fivepd` — existing core update.
+- `resources/[fivepd]/fivepd_weaponwheel` — complete weapon-wheel1.2.0, a sibling of the core, with its own manifest/data/UI/fonts/audio. Do not put it inside the core folder.
+- `resources/fivepd_fieldops` — existing field operations/medical resource.
+
+Keep the existing FivePD startup configuration, and ensure `fivepd_fieldops` and `fivepd_weaponwheel` start after the core. Restart and reconnect. Core Data, DB, general/custom configuration and unchanged fieldops configuration are not included. The complete wheel includes its default config; back up and restore any wheel-specific custom settings if applicable. Original dependency versions and SQLite vehicle filtering fix remain intact.
+
+The core window is narrower, important text is larger, and map viewports retain4:3 aspect ratio. Admin-only map point/marker teleport uses server-owned tickets tied to player/ped/bucket/deadline, checks role/access/activity/on-foot state again before completing, streams ground safely and releases cancelled/expired loading state. Ordinary players cannot initiate or finish another player's request. Department/rank editors now accept public HTTP(S) direct PNG/JPG/WebP URLs with preview instead of file uploads; legacy saved PNG images still work. The server validates references and never fetches arbitrary URLs. Recommended256×256px and200KB; HTTPS recommended.
+
+The previous two-file wheel compatibility patch could leave an incomplete or mismatched wheel. This release supplies the complete resource. Early client diagnostics remain available if a later data/UI script fails, missing old configuration fields receive defaults, frontend import errors are surfaced, native Tab input can open the wheel if the saved command mapping did not fire, and medical/teleport locks remain respected. Game F8: `weaponwheeldebug`. Server console: `weaponwheel_status` (active path and file completeness), `fivepd_active_path` (core2.1.0 and wheel1.2.0 location/version).
+
+Validation: actual CitizenFX SDK build;56 server tests;128 server adapter simulation checks;12 native teleport checks including queued-cancellation races;20 lifecycle and14 physical-AI native checks;37 wheel Lua,7 wheel model and6 footer checks;162 NUI tests passed (2 pre-existing skipped). Compiled operations/URL/teleport-permission workflows, medical UI and complete wheel interactions passed at1366×768,1920×1080,2560×1440 and3440×1440. Package CRC, literal bracketed layout, complete wheel file identity and preservation of existing Data/configuration were verified. Live FiveM gameplay/streaming behavior, terrain/AI navigation and performance still require in-game verification.
+
+## Earlier folder-layout correction v2.0.1
 
 The user's existing running core is inside `resources/[fivepd]/fivepd`. **Keep the `[fivepd]` group name including brackets.** Copying `Libraries` and `fxmanifest.lua` into the outer group does not update the nested `fivepd` resource. The previous root-level destination advice was incorrect for this installation.
 
