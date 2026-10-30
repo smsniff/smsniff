@@ -1,6 +1,27 @@
 # FivePD Korean resource delivery
 
-## Current hotfix v2.1.1 — field initialization and teleport
+## Current v2.2.0 — Korean records, station staff and locker uniforms
+
+[Download the incremental update](https://github.com/smsniff/smsniff/raw/refs/heads/fivepd-korean-delivery/FivePD-Interface-NPC-Update-v2.2.0.zip) — ordinary ZIP, no password, approximately1MB, for the existing v2.1.x installation. Stop the server and merge `[fivepd]` and `fivepd_fieldops` into `D:\txData\FiveMBasicServerCFXDefault_E351AA.base\resources`; restart and reconnect. Keep bracketed names, Config, Data and DB. `fivepd_update_status` reports2.2.0. The cumulative `FivePD-Operations-UI-Latest.zip` and versioned `FivePD-Operations-Update-v2.2.0.zip` contain the same changes plus earlier updates. The incremental archive contains only changed runtime files and a short Korean guide, and leaves the unchanged wheel alone.
+
+Vehicle records now localize all160 emitted color names and bundled GTA model/manufacturer labels; the old Brand field actually stored model codes, so model and real manufacturer are shown separately (Seminole / Canis). Stored values, plates and custom addon identifiers remain unchanged. Document names and dates are localized, as are report default labels/actions, loading text and related-person gender/date choices. Report IDs and user-written narratives remain unchanged. Existing English shooter titles are displayed and searched in Korean. Incident IDs show short prefixes, extend collisions on the current page, and expose the full ID on hover without changing references.
+
+Language loading uses the actual resource root, isolates invalid optional language files and removes the developer TEST locale. Updated Korean and English runtime dictionaries are included. The settings list shows Korean language names and includes the currently selected language with a checkmark instead of hiding it.
+
+Station beacons are replaced with local role-appropriate NPCs and idle scenarios. Staff stream within65m and despawn beyond90m, with a12-actor cap, bounded model loading and cleanup; no network actors are added. Approach and pressE for existing authorized equipment/vehicle/desk menus or the locker. The server checks membership, access, active health/session, on-foot state and locker distance for each wardrobe request. Members may dress before starting duty. The wardrobe saves the original outfit once per session, cancels delayed changes if injured or moved away, and restores clothing on resource stop. Clothing is supported for native male/female freemode models; unsupported character models receive an explanation and are never forcibly changed. Model, face, hair, health, armor and weapons are untouched. Modules for streaming, presets, wardrobe native logic, UI and server authorization are separate.
+
+[Download the Mission Row MLO registration patch](https://github.com/smsniff/smsniff/raw/refs/heads/fivepd-korean-delivery/FivePD-MissionRow-MLO-Compat-v1.0.1.zip) — approximately2.5KB. **The original MLO assets are not included or rehosted.** First extract the user-supplied `mission_row_station_rampart.zip` into `resources/[maps]/mission_row_station_rampart`, with `fxmanifest.lua` and `stream` directly inside. Then merge this compatibility patch's `[maps]` folder into `resources`. Before the existing FivePD startup lines, add once:
+
+```cfg
+set fivepd_missionrow_layout "rampart"
+ensure mission_row_station_rampart
+```
+
+Restart the server and reconnect. `missionrow_status` reports essential map file presence and active paths. The patch registers all six YTYPs explicitly. The opt-in profile requires a started map and actual core assets, and moves only unchanged default armory/locker points in memory; custom coordinates and persisted settings are preserved. The replacement MLO's deliberate removal of the original interior is retained. Other Mission Row replacement maps should not run simultaneously.
+
+Validation: original83,143,957-byte MLO ZIP CRC and all252 RSC7 streams passed; binary metadata was inspected for placement, rooms and gun lockers. Actual CitizenFX server/client builds,56 existing SDK tests,29 configuration/recovery/catalog/profile tests,139 server-adapter simulation checks and native checks20 lifecycle/14EMS/12teleport/17NPC/22wardrobe passed. The NUI suite passed173 tests with2 existing skipped; the additional selected-language regression and report-form check passed. Compiled record lookup/report creation/language save, existing operations/map/radio/logo workflows, medical and wardrobe flows passed at1366×768,1920×1080,2560×1440 and3440×1440. The incremental ZIP was overlaid on v2.1.1 and matched every cumulative runtime file while preserving sample private recovery/configuration. Actual Windows FiveM rendering, doors/collision, NPC ground alignment, terrain, multiplayer navigation and in-game performance remain unverified.
+
+## Earlier hotfix v2.1.1 — field initialization and teleport
 
 [Download FivePD-FieldOps-Fix-v2.1.1.zip](https://github.com/smsniff/smsniff/raw/refs/heads/fivepd-korean-delivery/FivePD-FieldOps-Fix-v2.1.1.zip) — ordinary ZIP, no password, 0.44 MB. For an existing v2.1.0 installation, stop the server and merge its `[fivepd]` folder into `D:\txData\FiveMBasicServerCFXDefault_E351AA.base\resources`. Restart and reconnect. `fivepd_update_status` reports 2.1.1. Keep bracketed names and all Config/Data/DB files. No configuration reset or server.cfg change is required.
 

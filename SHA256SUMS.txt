@@ -6,5 +6,8 @@ ddad683034f4448cf7b11a8cad8ffe389413b85583125d7f44c481c2cc062f2b  FivePD-Operati
 3b4fa63fea349c80bd014cae2b4eebacbc845183aa704706b058fdcca1046476  FivePD-Operations-Update-v2.0.1.zip
 eaf68e8f7ce1c05fdcf45333ac5768bebaf6701af7f7eac8d4e7580b47872e26  FivePD-Operations-Update-v2.1.0.zip
 9b0ad7775c90686e8c2ae3fb821bc08de8bdee54d55298bc05d157c6d08086cb  FivePD-FieldOps-Fix-v2.1.1.zip
-d43e96729ba3b59f1cba586cd083e2c96cdb26031ab63cef3a2d02daf22c74f2  FivePD-Operations-UI-Latest.zip
 d43e96729ba3b59f1cba586cd083e2c96cdb26031ab63cef3a2d02daf22c74f2  FivePD-Operations-Update-v2.1.1.zip
+d6dcd3304935f910d32532011dfa2473e2b486cf87ffa554bc8884b0f8e51a69  FivePD-MissionRow-MLO-Compat-v1.0.1.zip
+499e62ee4f40e92cc82cc9466942bd064be31cb4dfe424a31b4c0eb266847007  FivePD-Interface-NPC-Update-v2.2.0.zip
+3a60a439cb7b36772144adcfdc36cd36dfb6e4f4a8b65da800ba1764d54209f7  FivePD-Operations-UI-Latest.zip
+3a60a439cb7b36772144adcfdc36cd36dfb6e4f4a8b65da800ba1764d54209f7  FivePD-Operations-Update-v2.2.0.zip
