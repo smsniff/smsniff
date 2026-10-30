@@ -1,6 +1,18 @@
 # FivePD Korean resource delivery
 
-## Current cumulative operations update v2.0.0 (2026-10-30)
+## Current folder-layout correction v2.0.1
+
+The user's existing running core is inside `resources/[fivepd]/fivepd`. **Keep the `[fivepd]` group name including brackets.** Copying `Libraries` and `fxmanifest.lua` into the outer group does not update the nested `fivepd` resource. The previous root-level destination advice was incorrect for this installation.
+
+After already applying v2.0.0, use **[FivePD-Core-Path-Fix-v2.0.1.zip](https://github.com/smsniff/smsniff/raw/refs/heads/fivepd-korean-delivery/FivePD-Core-Path-Fix-v2.0.1.zip)**. Stop the server, back up outside `resources`, then merge the archive's `[fivepd]` folder into the existing `resources/[fivepd]`. It updates the nested core and preserves the bracketed group and user data. The already started `fivepd_fieldops` resource stays in its existing location. Keep existing FivePD startup settings and ensure `fivepd_fieldops` is started after the core. Restart the server and reconnect.
+
+For the complete cumulative patch, **[FivePD-Operations-UI-Latest.zip](https://github.com/smsniff/smsniff/raw/refs/heads/fivepd-korean-delivery/FivePD-Operations-UI-Latest.zip)** now contains the corrected core layout plus the same field resource and wheel compatibility files. The wheel files must be merged into the existing wheel resource at its actual location. Do not rename bracketed group folders or delete existing resources.
+
+A read-only server command `fivepd_update_status` prints the active core path, package `2.0.1`, the unchanged `2.0.0` compiled UI identity, and field resource state. It does not expose private data or alter gameplay. A simulated extraction matching the screenshot's nested layout passed, preserved existing user-data and outer files, and the diagnostic command's source checks and stale/missing UI cases passed. Gameplay DLL and compiled UI bytes are unchanged from v2.0.0; live FiveM behavior remains subject to in-game verification.
+
+The independent field-resource command `fivepd_active_path` also reports the actual core path and `core update = 2.0.1`, even if the core bootstrap has a problem. It is console-only and read-only.
+
+## Superseded cumulative operations update v2.0.0 (2026-10-30)
 
 **[Download FivePD-Operations-UI-Latest.zip](https://github.com/smsniff/smsniff/raw/refs/heads/fivepd-korean-delivery/FivePD-Operations-UI-Latest.zip)** — ordinary ZIP, no password. The versioned archive is `FivePD-Operations-Update-v2.0.0.zip`. This updates an existing Korean FivePD installation and the already installed weapon wheel; it includes all previous operations UI changes.
 
